@@ -3,7 +3,7 @@ PROJECT_HOME = os.path.abspath(os.path.join(os.path.dirname(__file__),'../../'))
 sys.path.append(PROJECT_HOME)
 from flask.ext.testing import TestCase
 from flask import url_for, Flask
-import unittest
+import unittest2
 import requests
 import time
 import app
@@ -45,4 +45,4 @@ class TestWebservices(TestCase):
 
 
 if __name__ == '__main__':
-  unittest.main()
+  unittest2.main()
